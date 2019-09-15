@@ -1,0 +1,4 @@
++ react-native@0.46.4
+removed 16 packages, updated 1 package and audited 895164 packages in 15.218s
+found 25 vulnerabilities (14 low, 2 moderate, 9 high)
+  run `npm audit fix` to fix them, or `npm audit` for details

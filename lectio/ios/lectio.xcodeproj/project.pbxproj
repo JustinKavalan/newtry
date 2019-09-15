@@ -20,6 +20,7 @@
 		7EFEA6A72B7913EA76C1A806 /* libPods-lectio-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB5A040B21C052CE4BAB93D /* libPods-lectio-tvOS.a */; };
 		95C579AD68E475BED16EC7E3 /* libPods-lectioTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC13025BFA883B2857B56C24 /* libPods-lectioTests.a */; };
 		976161AE2AEB40728E4157EF /* libPods-lectio-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1133E0A719B7241CD470067 /* libPods-lectio-tvOSTests.a */; };
+		D051DE54232E1AFB00773FDE /* libRNAudioRecorderPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D051DE51232E1ACA00773FDE /* libRNAudioRecorderPlayer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "lectio-tvOS";
+		};
+		D051DE50232E1ACA00773FDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D051DE4C232E1ACA00773FDE /* RNAudioRecorderPlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNAudioRecorderPlayer;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -64,6 +72,7 @@
 		A6CD20DFC98D7A75AF94B718 /* Pods-lectioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lectioTests.debug.xcconfig"; path = "Target Support Files/Pods-lectioTests/Pods-lectioTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC13025BFA883B2857B56C24 /* libPods-lectioTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lectioTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB5A040B21C052CE4BAB93D /* libPods-lectio-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lectio-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D051DE4C232E1ACA00773FDE /* RNAudioRecorderPlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNAudioRecorderPlayer.xcodeproj; path = "../node_modules/react-native-audio-recorder-player/ios/RNAudioRecorderPlayer.xcodeproj"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F80C46D60D25AB1FBD7381A0 /* Pods-lectio-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lectio-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-lectio-tvOSTests/Pods-lectio-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D051DE54232E1AFB00773FDE /* libRNAudioRecorderPlayer.a in Frameworks */,
 				001B93062265D023220FD643 /* libPods-lectio.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,13 +171,13 @@
 				A6CD20DFC98D7A75AF94B718 /* Pods-lectioTests.debug.xcconfig */,
 				362FA1C5E4073E2F688F3155 /* Pods-lectioTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				D051DE4C232E1ACA00773FDE /* RNAudioRecorderPlayer.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -194,6 +204,14 @@
 				00E356EE1AD99517003FC87E /* lectioTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* lectio-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* lectio-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D051DE4D232E1ACA00773FDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D051DE51232E1ACA00773FDE /* libRNAudioRecorderPlayer.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -290,14 +308,20 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 3D27C2TJR4;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 3D27C2TJR4;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3D27C2TJR4;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E48F1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3D27C2TJR4;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
 					};
@@ -308,12 +332,19 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D051DE4D232E1ACA00773FDE /* Products */;
+					ProjectRef = D051DE4C232E1ACA00773FDE /* RNAudioRecorderPlayer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* lectio */,
@@ -323,6 +354,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D051DE51232E1ACA00773FDE /* libRNAudioRecorderPlayer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNAudioRecorderPlayer.a;
+			remoteRef = D051DE50232E1ACA00773FDE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {
@@ -628,7 +669,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 3D27C2TJR4;
 				INFOPLIST_FILE = lectio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -647,7 +690,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3D27C2TJR4;
 				INFOPLIST_FILE = lectio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -799,6 +844,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 3D27C2TJR4;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -852,6 +898,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 3D27C2TJR4;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

@@ -23,6 +23,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import RecordButton from './app/components/RecordButton';
+import SummaryList from './app/components/SummaryList';
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <RecordButton/>
+        {/* <SummaryList/> */}
       </SafeAreaView>
     </Fragment>
   );
