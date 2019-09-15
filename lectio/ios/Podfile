@@ -29,6 +29,8 @@ target 'lectio' do
 
   pod 'RNAudioRecorderPlayer', :path => '../node_modules/react-native-audio-recorder-player'
 
+  pod 'RNFS', :path => '../node_modules/react-native-fs'
+
   target 'lectioTests' do
     inherit! :search_paths
     # Pods for testing
