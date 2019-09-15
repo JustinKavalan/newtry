@@ -83,6 +83,8 @@ PODS:
     - React
   - RNFS (2.14.1):
     - React
+  - RNGestureHandler (1.4.1):
+    - React
   - yoga (0.60.5.React)
 
 DEPENDENCIES:
@@ -108,6 +110,7 @@ DEPENDENCIES:
   - React-RCTWebSocket (from `../node_modules/react-native/Libraries/WebSocket`)
   - RNAudioRecorderPlayer (from `../node_modules/react-native-audio-recorder-player`)
   - RNFS (from `../node_modules/react-native-fs`)
+  - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -159,6 +162,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-audio-recorder-player"
   RNFS:
     :path: "../node_modules/react-native-fs"
+  RNGestureHandler:
+    :path: "../node_modules/react-native-gesture-handler"
   yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -184,8 +189,9 @@ SPEC CHECKSUMS:
   React-RCTText: b074d89033583d4f2eb5faf7ea2db3a13c7553a2
   React-RCTVibration: 2105b2e0e2b66a6408fc69a46c8a7fb5b2fdade0
   React-RCTWebSocket: cd932a16b7214898b6b7f788c8bddb3637246ac4
-  RNAudioRecorderPlayer: f9e3c3cf07f74d7c09bfc39eb230a5dcd84ffe60
+  RNAudioRecorderPlayer: 91a8102256bb6ee23bbc639457aac9ef27309862
   RNFS: a8fbe7060fa49157d819466404794ad9c58e58cf
+  RNGestureHandler: 4cb47a93019c1a201df2644413a0a1569a51c8aa
   yoga: 312528f5bbbba37b4dcea5ef00e8b4033fdd9411
 
 PODFILE CHECKSUM: 8c5dede83b9d24fc417f7c5cb2867b4d63eb511f

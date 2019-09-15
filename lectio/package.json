@@ -12,6 +12,9 @@
     "react-native": "^0.60.5",
     "react-native-audio-recorder-player": "^2.3.0",
     "react-native-fs": "^2.14.1",
+    "react-native-gesture-handler": "^1.4.1",
+    "react-navigation": "^4.0.5",
+    "react-navigation-stack": "^1.7.3",
     "typescript": "^3.6.3"
   },
   "devDependencies": {
