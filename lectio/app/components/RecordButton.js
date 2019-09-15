@@ -39,14 +39,22 @@ export default class RecordButton extends React.Component {
                     const result = await this.audioRecorderPlayer.stopRecorder();
                     
                     RNFS.readFile(result, 'base64')
-                        .then(result, () => {
-                            fetch('http://heroku-api.sdfjhlkhjsdlfkj.com', {
+                        .then((result) => {
+                            console.log("File read successfully! Bleh: ", result);
+                            fetch('http://ec2-13-58-106-187.us-east-2.compute.amazonaws.com:5000', {
                                 method: 'POST',
                                 headers: {
                                     'Content-Type': 'text/plain'
                                 },
                                 body: result,
-                            });
+                            }).then((result) => {
+                                console.log("Audio file posted successfully! Happy days. Here's the result: ", result)
+                            }).catch((error) => {
+                                console.log("Sad, your post failed. This might help: ", error);
+                            })
+                        })
+                        .catch((error) => {
+                            console.log("File reading failed :( Look here: ", error);
                         });
                     }
                 }></Button>
